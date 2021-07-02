@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+
+<script>
+
+	function jumpLine() {
+
+		document.write("<br><hr><br>");
+	}
+
+	function reveal(text) {
+
+		document.write("<big>" + text + "</big>");
+		jumpLine();
+	}
+
+	var vitorias = parseInt(prompt("Entre com o número de vitórias"));
+	var empates = parseInt(prompt("Entre com o número de empates"));
+
+	var pontos = vitorias * 3 + empates;
+
+	reveal("Os pontos do seu time é " + pontos);
+
+	//condição: se pontos for maior que 28
+	//se = if(recebe)
+	if(pontos > 28) {
+		reveal("Seu time está melhor do que o ano passado.");
+	}
+
+	if(pontos < 28) {
+		reveal("Seu time está pior do que o ano passado")
+	}
+
+	//para comparar algo serão dois iguais (==)
+	if(pontos == 28) {
+		reveal("Seu time está igual ao ano passado.")
+	}
+
+	reveal("FIM.")
+
+</script>

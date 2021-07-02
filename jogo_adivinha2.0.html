@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+
+<script>
+
+	function jumpLine() {
+
+		document.write("<br><br>");
+	}
+
+	function reveal(text) {
+
+		document.write("<big>" + text + "</big>");
+		jumpLine();
+	}
+
+	var numeroPensado = Math.round(Math.random() * 10);
+	//faz com que o parametro surja no console
+	console.log(numeroPensado);
+
+	var tentativa = 1
+
+	while(tentativa <= 3) {
+		var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+		if(chute == numeroPensado) {
+		
+			reveal("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+			break;
+			
+		} else {
+
+			reveal ("Você errou!");
+		}
+
+		tentativa++
+	}
+
+	reveal ("FIM")
+</script>

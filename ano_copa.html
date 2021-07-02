@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+
+<script>
+
+	function jumpLine() {
+
+		document.write("<br><br>");
+	}
+
+	function reveal(text) {
+
+		document.write("<big>" + text + "</big>");
+		jumpLine();
+	}
+
+	var limite = parseInt(prompt("Entre com a data limite."))
+	var anoCopa = 1930;
+
+	//while - ferramenta de repetição JS, recebe o paramêtro true ou false
+	//É muito importante definir um limitador (false) para não repetir infinitamente
+	while(anoCopa <= limite) {
+
+		reveal("Teve copa em " + anoCopa);
+		anoCopa = anoCopa + 4;
+	}
+
+	reveal("FIM!")
+
+
+</script>

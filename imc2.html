@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+
+<script>
+
+	function jumpLine() {
+
+		document.write("<br><hr><br>");
+	}
+
+	function reveal(text) {
+
+		document.write("<big>" + text + "</big>");
+		jumpLine();
+	}
+
+	function calculaImc(peso, altura) {
+
+		var imc = peso / (altura * altura);
+		//retorna o valor calculado, importante para uma function
+		return imc;
+	}
+
+	//transforma o calculo em uma variavel, importante para definir de quem é o imc
+	var imcLucas = calculaImc(75, 1.80);
+	var imcAmigo = calculaImc(68, 1.72);
+	//ultiliza o resultado com a soma de duas variaveis auxiliares
+	var totalImc = imcLucas + imcAmigo
+	reveal("a soma dos imc's é " + totalImc);
+
+	//ou então, simplificando
+	var totalImc2 = calculaImc(75, 1.80) + calculaImc(68, 1.72);
+	reveal("a soma dos imc's é " + totalImc2);
+
+</script>

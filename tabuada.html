@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+
+<script>
+
+	function jumpLine() {
+
+		document.write("<br><br>");
+	}
+
+	function reveal(text) {
+
+		document.write("<big>" + text + "</big>");
+		jumpLine();
+	}
+
+	for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+
+		reveal(7 * multiplicador);
+		;
+	}
+
+	reveal("FIM");
+
+</script>

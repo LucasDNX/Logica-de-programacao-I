@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<script>
+
+	function jumpLine() {
+
+		document.write("<br><br>");
+	}
+
+	function reveal(text) {
+
+		document.write("<big>" + text + "</big>");
+		jumpLine();
+	}
+
+	var numeroPensado = Math.round(Math.random() * 10);
+	//faz com que o parametro surja no console
+	console.log(numeroPensado);
+
+	var chute = parseInt(pronpt("Já pensei. Qual você acha que é?"))
+
+	if(chute == numeroPensado) {
+
+		reveal("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+
+	//senão = else
+	} else {
+
+		//para a condição diferente, usa-se != em JS
+		reveal ("Você errou! Eu tinha pensado no " + numeroPensado)
+	}
+
+	//1 - Você pode criar uma função sorteia que recebe um número n e sorteia um número entre 0 a n, retornando esse valor. Dessa forma, em vez de escrever var numeroPensado = Math.round(Math.random() * n);, você escreveria var numeroPensado = sorteia(n);. Faça essa modificação, criando a nova função e utilize-a.
+
+	//2 - Faça com que seu jogo mostre, quando o usuário errar a tentativa, se o número que ele chutou era maior ou menor ao número pensado pelo programa.
+</script>

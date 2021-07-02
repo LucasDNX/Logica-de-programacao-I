@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<script>
+
+	//função sem paramêtro 
+	function jumpLine() {
+
+		document.write("<br><hr><br>");
+	}
+
+	//função com um paramêtro 
+	function reveal(text) {
+
+		document.write("<big>" + text + "</big>");
+		jumpLine();
+	}
+
+	//função com dois ou mais paramêtros definidos
+	function calculaImc(peso, altura) {
+
+		var imc = peso / (altura * altura);
+		reveal("O IMC Calculado é " + imc);
+	}
+
+	calculaImc(75, 1.80);
+	calculaImc(68, 1.72);
+
+
+</script>

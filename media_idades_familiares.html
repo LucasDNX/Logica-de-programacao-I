@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+
+<script>
+
+	function jumpLine() {
+
+		document.write("<br><br>");
+	}
+
+	function reveal(text) {
+
+		document.write("<big>" + text + "</big>");
+		jumpLine();
+	}
+
+	var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+
+	var numero = 1
+;
+	//para acumular um valor em repetições, a variavel que armazena a quantidade deverá estar fora do while
+	var totalIdades = 0;
+
+		//1			4
+	while(numero <= totalFamiliares) {
+
+		var idade = parseInt(prompt("Informe a idade do familiar"));
+		totalIdades = totalIdades + idade
+		numero++;
+	}
+
+	var mediaIdades = totalIdades/totalFamiliares;
+
+	reveal("A media das idades é " + mediaIdades);
+	reveal("FIM");
+</script>
