@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function jumpLine() {
+
+		document.write("<br><br>");
+	}
+
+	function reveal(text) {
+
+		document.write("<big>" + text + "</big>");
+		jumpLine();
+	}
+
+	var contador = 2;
+
+	while(contador <= 100) {
+		reveal(contador);
+		contador = contador + 2;
+	}
+
+	reveal("FIM");
+
+</script>

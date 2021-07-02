@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia() {
+
+        return Math.round(Math.random() * 100);
+    }   
+
+    var numeroPensado = sorteia();
+
+    var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+    } else {
+
+        mostra("Já era, você errou!");
+        mostra("Já era, você errou!");
+        mostra("Já era, você errou!");
+        mostra("Já era, você errou!");
+        mostra("Já era, você errou!");
+        mostra("Já era, você errou!");
+        mostra("Já era, você errou!");
+        mostra("Já era, você errou!");
+        mostra("Já era, você errou!");
+        mostra("Já era, você errou!");
+    }
+
+    //Ajude Daniel utilizando outra maneira de exibir o mostra("Já era, você errou!")10 vezes! Dessa maneira, ele precisará alterar o texto em apenas um lugar.
+    //lógica I - aula 7.2
+</script>

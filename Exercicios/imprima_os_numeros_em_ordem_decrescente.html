@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function jumpLine() {
+
+		document.write("<br><br>");
+	}
+
+	function reveal(text) {
+
+		document.write("<big>" + text + "</big>");
+		jumpLine();
+	}
+
+	//Imprima em ordem decrescente todos os números entre 20 e 0, incluindo os limites! No final, escreva a palavra "FIM". DICA: você pode decrementar uma variável!
+
+	var contador = 20;
+
+	while(contador >= 0) {
+		
+		reveal(contador);
+		contador = contador - 1
+	}
+
+	reveal("FIM");
+
+</script>
